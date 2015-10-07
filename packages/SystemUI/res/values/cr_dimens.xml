@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lockscreen target insets -->
+    <item type="dimen" name="lockscreen_target_inset">30dp</item>
+
+    <!-- Font size for notification text -->
+    <dimen name="glowpad_notification_font_size">12dp</dimen>
+
+    <!-- Radius of notification text -->
+    <dimen name="glowpad_notification_text_radius">60dp</dimen>
+
+    <!-- Top margin for overflow notifications shown in the P.O.R.N. view -->
+    <dimen name="glowpad_overflow_notifications_margin_top">48dp</dimen>
+
+    <!-- Top margin for overflow notifications container shown in the active display view -->
+    <dimen name="ad_clock_margin_bottom">60dp</dimen>
+
+    <!-- left/right margin for extra notifications in ActiveDisplayView -->
+    <dimen name="ad_notification_margin">4dp</dimen>
+
+    <!-- Active display overflow notification icon size -->
+    <dimen name="overflow_icon_size">32dp</dimen>
+
+    <!-- Active display overflow background notification icon size -->
+    <dimen name="overflow_background_icon_size">56dp</dimen>
+
+    <!-- Active display Handle notification icon size -->
+    <dimen name="handle_icon_size">32dp</dimen>
+
+    <!-- Active display overflow notification padding -->
+    <dimen name="overflow_icon_padding">2dp</dimen>
+
+    <!-- Active display clock font size -->
+    <dimen name="ad_clock_font_size">75dp</dimen>
+
+    <!-- Active display date font size -->
+    <dimen name="ad_date_font_size">18dp</dimen>
+
+    <!-- AM/PM size in active display -->
+    <dimen name="ad_ampm_font_size">32dp</dimen>
+
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_subtext_size">12dp</dimen>
+
+    <!-- Notification peek dimens -->
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="small_notification_icon_size">30dp</dimen>
+    <dimen name="small_notification_icon_padding">2dp</dimen>
+    <dimen name="notification_icon_size">46dp</dimen>
+    <dimen name="notification_text_width">300dp</dimen>
+    <dimen name="clock_padding">10dp</dimen>
+    <dimen name="clock_size">15dp</dimen>
+
+    <!-- Notification Shortcuts -->
+    <dimen name="notification_shortcuts_close_handle_height">28dp</dimen>
+    <dimen name="notification_shortcuts_spacing_height">88dp</dimen>
+    <dimen name="notification_shortcuts_drawer_margin">56dp</dimen>
+
+    <dimen name="wifi_combo_margin_end">-6dp</dimen>
+
+    <!-- App circle sidebar -->
+    <dimen name="app_sidebar_trigger_width">12dip</dimen>
+    <dimen name="app_sidebar_listview_width">160dp</dimen>
+    <dimen name="app_sidebar_icon_width">72dp</dimen>
+    <dimen name="app_sidebar_icon_height">72dp</dimen>
+
+    <!-- Heads up -->
+    <dimen name="heads_up_bottom_gap">5dp</dimen>
+
+    <!-- Network traffic monitor single-line text size -->
+    <dimen name="net_traffic_single_text_size">12dp</dimen>
+
+    <!-- Network traffic monitor multi-line text size -->
+    <dimen name="net_traffic_multi_text_size">9dp</dimen>
+
+</resources>

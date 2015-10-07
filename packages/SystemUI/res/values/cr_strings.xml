@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Content description of the data connection type HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_data_connection_HP">HSPA+</string>
+
+    <!-- Content description of the data connection type DC-HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_data_connection_DC">DC-HSPA+</string>
+
+    <string name="accessibility_quick_settings_ringer">Sound <xliff:g id="state" example="Off">%s</xliff:g>.</string>
+    <string name="accessibility_quick_settings_vibration">Vibration <xliff:g id="state" example="Off">%s</xliff:g>.</string>
+
+    <string name="bean_dream_settings_cid_title">Use Cid\'s head</string>
+    <string name="bean_dream_settings_cid_summary">Use Cid\'s head instead of jellybeans inside the dream</string>
+
+    <!-- QuickSettings: Profile [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_profile_label">Profile</string>
+
+    <!-- Power widget -->
+    <string name="powerwidget_screen_timeout_toast">Screen timeout set to: %1$d %2$s</string>
+
+    <!-- App circle sidebar -->
+    <string name="app_float_maximize_item_title">Maximize</string>
+    <string name="app_float_item_title">Float view</string>
+    <string name="app_stop_item_title">Kill app</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_start">Battery Saver Enabled</string>
+    <string name="battery_saver_stop">Battery Saver Disabled</string>
+    <string name="battery_saver_change">Battery Saver Change network to</string>
+    <string name="battery_saver_network">Network restored</string>
+    <string name="battery_saver_data">Mobile data restored</string>
+    <string name="battery_saver_brightness">Screen Brightness restored</string>
+    <string name="battery_saver_bluetooth">Bluetooth restored</string>
+    <string name="battery_saver_location">Gps restored</string>
+    <string name="battery_saver_wifi">Wi-Fi restored</string>
+    <string name="battery_saver_cpu">CPU restored</string>
+    <string name="battery_saver_cpu_change">Battery Saver Change CPU freq to</string>
+    <string name="battery_saver_sync">Sync restored</string>
+    <string name="battery_saver_led">LED restored</string>
+    <string name="battery_saver_vibrate">Vibrate restored</string>
+    <string name="battery_saver_no_changes">No configuration restored</string>
+    <string name="battery_saver_all">All configuration restored</string>
+    <string name="battery_saver_enable_ticker">Battery saver mode running...</string>
+    <string name="battery_saver_enable_title">Battery saver mode</string>
+    <string name="battery_saver_airplane_ticker">Airplane mode enabled by battery saver</string>
+    <string name="battery_saver_airplane_text">Airplane mode enabled by battery saver because there is no signal after 5 minutes</string>
+    <string name="battery_saver_disable">Disable</string>
+
+    <!-- Battery saver modes -->
+    <string name="network_4G">4G/LTE</string>
+    <string name="network_3G_only">3G Only</string>
+    <string name="network_3G_auto">2G/3G Auto</string>
+    <string name="network_3G">2G/3G Pref</string>
+    <string name="network_2G">2G Only</string>
+    <string name="network_lte">LTE (recommended)</string>
+    <string name="network_1x">1x</string>
+    <string name="network_global">Global</string>
+    <string name="quick_settings_network_unknown">Unknown!</string>
+
+    <!-- Battery saver mode Tile labels -->
+    <string name="quick_settings_battery_saver_label">Battery saver on</string>
+    <string name="quick_settings_battery_saver_off_label">Battery saver off</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_gps_off">GPS off</string>
+    <string name="quick_settings_screen_sleep">Go to sleep</string>
+    <string name="quick_settings_ringer_on">Sound on</string>
+    <string name="quick_settings_ringer_off">Sound off</string>
+    <string name="quick_settings_vibration_on">Vibration on</string>
+    <string name="quick_settings_vibration_off">Vibration off</string>
+    <string name="quick_settings_label_enabled">On</string>
+    <string name="quick_settings_label_disabled">Off</string>
+    <string name="quick_settings_ringer_normal">Sound</string>
+    <string name="quick_settings_lockscreen">Lock screen</string>
+    <string name="quick_settings_network_type">Network mode</string>
+    <string name="quick_settings_report_bug">Report bug</string>
+    <string name="quick_settings_sync">Sync</string>
+    <string name="quick_settings_sync_off">Sync off</string>
+    <string name="quick_settings_torch">Torch</string>
+    <string name="quick_settings_torch_off">Torch off</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_nfc_off">NFC off</string>
+    <string name="quick_settings_screen_timeout">Timeout</string>
+    <string name="quick_settings_screen_timeout_summary" translatable="false">%1$d %2$s</string>
+    <string name="quick_settings_screen_timeout_summary_never">Never</string>
+    <string name="quick_settings_usb_tether_off_label">Disconnected</string>
+    <string name="quick_settings_usb_tether_connected_label">Tethering off</string>
+    <string name="quick_settings_usb_tether_on_label">Tethering</string>
+    <string name="quick_settings_wifiap">Wi-Fi hotspot</string>
+    <string name="quick_settings_wifiap_off">Wi-Fi hotspot off</string>
+    <string name="quick_settings_quiethours">Quiet hours</string>
+    <string name="quick_settings_quiethours_off">Quiet hours off</string>
+    <string name="quick_settings_lte">LTE</string>
+    <string name="quick_settings_lte_off">LTE off</string>
+    <string name="quick_settings_shakeevents">Shake events</string>
+    <string name="quick_settings_shakeevents_off">Shake events off</string>
+    <string name="quick_settings_volume">Volume</string>
+    <string name="quick_settings_music_play">Play</string>
+    <string name="quick_settings_music_pause">Pause</string>
+    <string name="quick_settings_music_schedule_title">Sleep timer</string>
+    <string name="quick_settings_music_schedule_in_progress">Timer in progress</string>
+    <string name="quick_settings_music_schedule_start">Start timer</string>
+    <string name="quick_settings_music_schedule_cancel">Clear timer</string>
+    <string name="quick_settings_music_schedule_update">Update timer</string>
+    <string name="quick_settings_camera_label">Camera</string>
+    <string name="quick_settings_carbon_label">Carbon Settings</string>
+    <string name="quick_settings_powermenu_label">Power Menu</string>
+    <string name="quick_settings_network_adb_disabled_label">Disabled</string>
+    <string name="quick_settings_network_adb_enabled_label">Enabled</string>
+    <string name="quick_settings_exp_desktop">Expanded</string>
+    <string name="quick_settings_exp_desktop_off">Disabled</string>
+    <string name="quick_settings_wifi_display_label">Connected</string>
+    <string name="quick_settings_wifi_display_no_connection_label">Available</string>
+    <string name="quick_settings_screenshot_label">Screenshot</string>
+    <string name="quick_settings_theme_switch_dark">Dark Carbon</string>
+    <string name="quick_settings_theme_switch_light">Light Carbon</string>
+    <string name="quick_settings_quick_record_deleted">Deleted...</string>
+    <string name="quick_settings_quick_record_nofile">Long-press</string>
+    <string name="quick_settings_quick_record_def">Quick Record</string>
+    <string name="quick_settings_quick_record_rec">Recording...</string>
+    <string name="quick_settings_quick_record_save">Saved</string>
+    <string name="quick_settings_quick_record_play">Playing...</string>
+    <string name="quick_settings_quick_record_dialog_cancel">Close</string>
+    <string name="quick_settings_quick_record_dialog">Play Recording\nLongpress to delete</string>
+    <string name="quick_settings_equalizer">Equalizer</string>
+    <string name="quick_settings_compass_off">Compass off</string>
+    <string name="quick_settings_compass_init">Initializing\u2026</string>
+    <string name="quick_settings_compass_value" translatable="false"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+
+    <!-- Title shown in recents popup for showing app in floating mode -->
+    <string name="status_bar_recent_floating_item_title">Floating mode</string>
+
+    <!-- Expanded desktop strings break the rules a bit - the icon identifies the feature, the string indicates current state -->
+    <string name="quick_settings_expanded_desktop">Expanded</string>
+    <string name="quick_settings_expanded_desktop_off">Normal</string>
+
+    <!-- Number of current connected bluetooth devices
+         Appears only when 2 or more devices are connected -->
+    <plurals name="quick_settings_bluetooth_multi_label">
+        <item quantity="other">%1$d connected</item>
+    </plurals>
+
+    <!-- Camera tile toasts -->
+    <string name="quick_settings_camera_error_connect">Can\'t connect to camera</string>
+
+    <!-- Text to display next to the minimal graphical battery meter.  [CHAR LIMIT=3] -->
+    <string name="status_bar_settings_battery_meter_min_format" translatable="false">
+        <xliff:g id="number">%d</xliff:g>
+    </string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_dialog_title">Choose action to assign</string>
+    <string name="navbar_home_button">Home button</string>
+    <string name="navbar_recent_button">Recent button</string>
+    <string name="navbar_search_button">Search button</string>
+    <string name="navbar_back_button">Back button</string>
+    <string name="navbar_empty_button">Empty button</string>
+    <string name="navbar_menu_conditional_button">Menu (autoHide) button</string>
+    <string name="navbar_menu_always_button">Menu (alwaysShow) button</string>
+    <string name="navbar_menu_big_button">Menu button</string>
+
+    <!-- Battery status in pie controls -->
+    <string name="pie_battery_status_charging">Charging (<xliff:g id="percent">%d</xliff:g>%%)</string>
+    <string name="pie_battery_status_full">Charged</string>
+    <string name="pie_battery_status_discharging"><xliff:g id="percent">%d</xliff:g>%% remaining</string>
+
+    <!-- Phone status in pie controls -->
+    <string name="pie_phone_status_no_service">No service</string>
+    <string name="pie_phone_status_airplane_mode">Airplane mode on</string>
+    <string name="pie_phone_status_emergency_only">Emergency calls only</string>
+
+    <!-- QS Battery Tile -->
+    <string name="quick_settings_battery_charging">Charging</string>
+    <string name="quick_settings_battery_discharging">Discharging</string>
+
+    <!-- Screenshot -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_screenshot">Capture screenshot</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_screenshot">Allows the app to cature a screenshot. This is protected by SystemUI.</string>
+    <string name="screenshot_notification_delete">Delete</string>
+    <string name="screenshot_delete_confirmation">Screenshot deleted.</string>
+    <string name="screenshot_toast">Screenshot in %1$d seconds</string>
+
+    <!-- Title shown in notification popup for launching notification in floating mode -->
+    <string name="status_bar_notification_floating_item_title">Floating mode</string>
+
+    <!-- Development shortcut -->
+    <string name="advanced_dev_option_wipe_app">Wipe app data</string>
+    <string name="advanced_dev_option_force_stop">Force stop</string>
+
+    <!-- Kill app toast -->
+    <string name="app_killed_message">App Killed</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="memory">RAM</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of background processes -->
+    <string name="service_free_mem"><xliff:g id="memory">%1$s</xliff:g> free</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
+    <string name="service_used_mem"><xliff:g id="memory">%1$s</xliff:g> used</string>
+
+    <!-- Off/On/Toggle -->
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="toggle">Toggle</string>
+
+    <!-- Slim Shortcut Actions -->
+    <string name="shortcut_picker">Slim Shortcuts</string>
+    <string name="shortcut_immersive">Immersive Mode</string>
+    <string name="shortcut_quiethours">Quiethours</string>
+    <string name="shortcut_rotation">Rotation</string>
+    <string name="shortcut_shakeevent">Shake events</string>
+    <string name="shortcut_torch">Torch Toggle</string>
+    <string name="shortcut_reboot">Reboot</string>
+    <string name="shortcut_recovery">Recovery</string>
+    <string name="shortcut_last_app">Last App</string>
+    <string name="shortcut_power_menu">Power Menu</string>
+    <string name="shortcut_screenshot">Screenshot</string>
+    <string name="shortcut_screensleep">Go to Sleep</string>
+    <string name="shortcut_volume">Volume</string>
+    <string name="shortcut_toggle_title">Action to perform</string>
+    <string name="shortcut_chamber">Chamber of Secrets</string>
+    <string name="chamber_disabled">Chamber of secrets is closed</string>
+    <string name="chamber_title">Input Settings string</string>
+    <string name="chamber_message">Input a Settings string that is either an on and off (checkbox) function or possibly a list-preference. For example, quiet_hours_ringer or similar. Settings can be found in the Settings.java file. WARNING: This process is dangerous!</string>
+    <string name="chamber_invalid">This is an invalid input. Be careful.</string>
+    <string name="chamber_invalid_setting">Try toggling the setting manually to ensure the settings database for this action exists.</string>
+    <string name="chamber_checkbox">Checkbox</string>
+    <string name="chamber_chk_message">Is this setting a checkbox setting?</string>
+    <string name="chamber_int">Input values</string>
+    <string name="chamber_int_message">Input the values you\'d like the setting to toggle between. Separate each value with a comma. Color settings accept hex-values such as #FF00aacc or basic color values like red, green, and yellow.</string>
+    <string name="chamber_name_title">Shortcut name</string>
+    <string name="chamber_name_message">Give the shortcut a name to display with the icon.</string>
+    <string name="chamber_name_toast">Using default name</string>
+
+    <!-- Dialog Cancel/OK -->
+    <string name="cancel">Cancel</string>
+    <string name="dlg_ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Active Display -->
+    <string name="active_display_privacy_content">Content message not showing because privacy mode enabled</string>
+
+    <string name="pie_date_format">ccc, dd MMM yyyy</string>
+    <string name="pie_hour_format_12">hh:mm</string>
+    <string name="pie_hour_format_24">HH:mm</string>
+
+    <!-- Content description for the add quick settings tile button. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_desc_add_quick_settings">Add Quick settings.</string>
+
+    <!-- Sim Slot number -->
+    <string name="sim_slot" translatable="false">1</string>
+    <string name="sim_slot_2" translatable="false">2</string>
+    <string name="sim_slot_3" translatable="false">3</string>
+
+    <!-- Smart PullDown Warning -->
+    <string name="smart_pulldown_disabled">Smart pulldown is disabled</string>
+
+    <!-- Blacklisted app for floating mode -->
+    <string name="floating_mode_blacklisted_app">The current app is blacklisted as it may not work as expected in floating mode </string>
+
+    <!-- Navigation bar IME navigation -->
+    <string name="accessibility_ime_navigation_left">Cursor left</string>
+    <string name="accessibility_ime_navigation_right">Cursor right</string>
+
+    <!-- Swipe recents for floating window confirmation dialog -->
+    <string name="recents_swipe_floating_title">Swipe recents to float</string>
+    <string name="recents_swipe_floating_message_portrait">Would you like to swipe left to open apps in floating window?</string>
+    <string name="recents_swipe_floating_message_landscape">Would you like to swipe down to open apps in floating window?</string>
+
+    <!-- Swipe notification for floating window confirmation dialog -->
+    <string name="status_bar_notification_swipe_floating_title">Swipe notification to float</string>
+    <string name="status_bar_notification_swipe_floating_message">Would you like to swipe left to open apps in floating window?</string>
+
+    <string name="recents_swipe_floating" translatable="false">@string/recents_swipe_floating_title</string>
+    <string name="status_bar_notification_swipe_floating" translatable="false">@string/status_bar_notification_swipe_floating_title</string>
+
+    <!-- Title shown when app provides no interface -->
+    <string name="status_bar_floating_no_interface">App provides no interface</string>
+
+    <!-- notify changed wifi network -->
+    <string name="wifi_status_changed">New connection </string>
+    <string name="wifi_restored">Connection restored </string>
+    <string name="wifi_address_changed">Wi\u2011Fi SSID changed to <xliff:g id="name">%s</xliff:g></string>
+    <string name="wifi_changed_ticker">Wi\u2011Fi SSID: <xliff:g id="name">%s</xliff:g></string>
+
+    <!-- Heads up -->
+    <string name="status_bar_notification_heads_up_enable_title">Enable heads up</string>
+    <string name="status_bar_notification_heads_up_disable_title">Disable heads up</string>
+    <string name="heads_up_snooze_message">Heads up is disabled for <xliff:g id="number">%d</xliff:g> minutes.</string>
+
+    <!-- Spam filter -->
+    <string name="status_bar_notification_spam_item_title">Ignore messages like this</string>
+</resources>
