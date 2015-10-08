@@ -34,6 +34,8 @@ import com.android.internal.telephony.MSimConstants;
 import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.MSimNetworkController;
 
+import static android.telephony.TelephonyManager.SIM_STATE_ABSENT;
+
 import com.android.systemui.R;
 
 // Intimately tied to the design of res/layout/msim_signal_cluster_view.xml
@@ -66,17 +68,12 @@ public class MSimSignalClusterView
     ViewGroup mWifiGroup;
     ViewGroup[] mMobileGroup;
     ImageView mWifi, mWifiActivity, mAirplane;
-    TextView[] mMobileSlot;
     ImageView[] mMobile;
     ImageView[] mMobileActivity;
     ImageView[] mMobileType;
     View mSpacer;
     private int[] mMobileGroupResourceId = {R.id.mobile_combo, R.id.mobile_combo_sub2,
                                           R.id.mobile_combo_sub3};
-    private int[] mMobileSlotResourceId = {R.id.mobile_slot_label, R.id.mobile_slot_label_2,
-                                          R.id.mobile_slot_label_3};
-    private int[] mMobileSlotString = {R.string.sim_slot, R.string.sim_slot_2,
-                                          R.string.sim_slot_3};
     private int[] mMobileResourceId = {R.id.mobile_signal, R.id.mobile_signal_sub2,
                                      R.id.mobile_signal_sub3};
     private int[] mMobileActResourceId = {R.id.mobile_inout, R.id.mobile_inout_sub2,
@@ -101,7 +98,6 @@ public class MSimSignalClusterView
         mMobileActivityId = new int[mNumPhones];
         mNoSimIconId = new int[mNumPhones];
         mMobileGroup = new ViewGroup[mNumPhones];
-        mMobileSlot = new TextView[mNumPhones];
         mMobile = new ImageView[mNumPhones];
         mMobileActivity = new ImageView[mNumPhones];
         mMobileType = new ImageView[mNumPhones];
@@ -130,7 +126,6 @@ public class MSimSignalClusterView
 
         for (int i = 0; i < mNumPhones; i++) {
             mMobileGroup[i]    = (ViewGroup) findViewById(mMobileGroupResourceId[i]);
-            mMobileSlot[i]     = (TextView) findViewById(mMobileSlotResourceId[i]);
             mMobile[i]         = (ImageView) findViewById(mMobileResourceId[i]);
             mMobileActivity[i] = (ImageView) findViewById(mMobileActResourceId[i]);
             mMobileType[i]     = (ImageView) findViewById(mMobileTypeResourceId[i]);
@@ -147,7 +142,6 @@ public class MSimSignalClusterView
         mAirplane       = null;
         for (int i = 0; i < mNumPhones; i++) {
             mMobileGroup[i]    = null;
-            mMobileSlot[i]     = null;
             mMobile[i]         = null;
             mMobileActivity[i] = null;
             mMobileType[i]     = null;
@@ -223,7 +217,6 @@ public class MSimSignalClusterView
 
         if ((mMobileVisible && mNoSimIconId[subscription] == 0) && !mIsAirplaneMode) {
             mMobileGroup[subscription].setVisibility(View.VISIBLE);
-            mMobileSlot[subscription].setText(mMobileSlotString[subscription]);
             mMobile[subscription].setImageResource(mMobileStrengthId[subscription]);
             mMobileGroup[subscription].setContentDescription(mMobileTypeDescription + " "
                 + mMobileDescription[subscription]);
@@ -231,6 +224,15 @@ public class MSimSignalClusterView
             mMobileType[subscription].setImageResource(mMobileTypeId[subscription]);
             mMobileType[subscription].setVisibility(
                 !mWifiVisible ? View.VISIBLE : View.GONE);
+            MSimTelephonyManager mtm = MSimTelephonyManager.getDefault();
+            int mSub1Status = mtm.getSimState(MSimConstants.SUB1);
+            int mSub2Status = mtm.getSimState(MSimConstants.SUB2);
+            if (mSub1Status == SIM_STATE_ABSENT && mSub2Status == SIM_STATE_ABSENT) {
+                mNoSimSlot[subscription].setImageResource(mNoSimIconId[subscription]);
+                mNoSimSlot[subscription].setVisibility(TextView.VISIBLE);
+            } else {
+                mNoSimSlot[subscription].setVisibility(ImageView.GONE);
+            }
         } else {
             mMobileGroup[subscription].setVisibility(View.GONE);
         }
