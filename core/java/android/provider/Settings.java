@@ -6046,7 +6046,7 @@ public final class Settings {
           */
         public static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
 
-       /**
+        /**
          * Allows to show the background activity back the lockscreen
          * @hide
          */
@@ -6056,7 +6056,6 @@ public final class Settings {
          * Allows blurring the lockscreen background
          * @hide
          */
-        public static final String LOCKSCREEN_BLUR_BEHIND = "lockscreen_blur_behind";
         public static final String LOCKSCREEN_BLUR_RADIUS = "lockscreen_blur_radius";
 
         /**
